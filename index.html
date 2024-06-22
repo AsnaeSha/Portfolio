@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Section</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+.about-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-section img {
+  width: 200px; /* Adjust the size as needed */
+  height: 200px;
+  border-radius: 50%; /* Makes the image round */
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  color: #333;
+  font-size: 1.1rem; /* Adjust the font size as needed */
+  line-height: 1.6; /* Adjust the line height for better readability */
+  margin: 20px 0; /* Add margin to create space between paragraphs */
+  text-align: justify; /* Justify the text for a cleaner look */
+  max-width: 800px; /* Limit the width of the text block */
+  margin-left: auto; /* Center align */
+  margin-right: auto; /* Center align */
+}
+
+  /* Additional CSS for Projects Section */
+.projects-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+}
+.card-img-top {
+  max-height: 180px; /* Adjust this value to fit the image properly in the card */
+  object-fit: cover; /* This makes sure the image covers the area properly */
+}
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.card-text {
+  margin-bottom: 15px;
+}
+
+/* Additional CSS for Skills Section */
+.skills-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.skills-section .card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.skills-section .card-img-top {
+  padding: 20px; /* Add padding around your images if needed */
+  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+  height: 180px; /* Fixed height for consistency */
+  object-fit: contain; /* This will make sure the image is scaled properly within the container */
+}
+.skills-section .card-body {
+  padding: 15px;
+}
+.skills-section .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.skills-section .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+.skills-section .btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Additional CSS for Contact Section */
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.social-icon {
+  width: 40px; /* Size of your icons */
+  margin-bottom: 10px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+.contact-section a:hover {
+  color: #ddd; /* Color when hovering over the link */
+}
+
+/* CSS for Sticky Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body {
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+}
+
+
+</style>
+
+</head>
+<body>
+
+<section id='about' class="about-section">
+  <div class="container">
+    <h2>About</h2>
+    <img src="images/about me pic.jpeg" alt="About Me">
+      <p>Welcome to my portfolio! With over a year of industry experience and more than two years of freelancing, I specialize in transforming complex data into clear, actionable insights. My expertise encompasses a wide range of tools and technologies, including SQL, Excel, Power BI, Python, and Pandas. I am adept at cleaning and transforming raw data, performing exploratory data analysis (EDA), and conducting hypothesis testing to validate assumptions.</p>
+      <p>I thrive on creating dynamic dashboards and detailed reports that enable businesses to make informed decisions. Whether it's through sophisticated data manipulation using advanced SQL queries and window functions or crafting visually compelling charts in Excel and Power BI, I ensure that the data is not only understood but also utilized effectively.</p>
+      <p>My approach is meticulous and results-driven, focusing on delivering insights that drive growth and efficiency. I take pride in my ability to visualize data trends and uncover hidden patterns, helping businesses to anticipate market shifts and optimize their strategies. My work is not just about numbers; it's about telling the story that data reveals, empowering stakeholders to take decisive actions based on real-time insights.</p>
+      <p>Let’s collaborate to bring your data to life and unlock its full potential. Together, we can turn raw information into a strategic asset for your business. Explore my portfolio to see how I can help you harness the power of data.</p>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light" id="projects">
+  <div class="container">
+    <h2 class="text-center">Projects</h2>
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/basket analysis.jpeg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Basket Analysis</h5>
+            <p class="card-text">
+              In this project, I performed a Basket Analysis on 100 grocery store transactions to uncover product associations. The analysis revealed that 20% of transactions included both coffee and milk, with a 40% confidence of purchasing milk when coffee is bought and a lift value of 1.5, indicating a strong association. These insights can drive personalized recommendations, inventory optimization
+              , and cross-selling strategies, such as placing avocados, tortilla chips, and salsa together to boost sales and enhance the shopping experience.
+            </p>
+            <a href="https://www.linkedin.com/posts/asnae-shahid_market-analysis-report-activity-7188188754019340289-65GS?utm_source=share&utm_medium=member_desktop" class="btn btn-primary">Post</a>
+            <a href="https://app.powerbi.com/groups/me/reports/ecb5143d-4faa-4332-95b8-d911a46f1dbc/ReportSection?experience=power-bi" class="btn btn-secondary">Live Dashboard</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/hr anaytics_page-0001.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">HR Analytics Report</h5>
+            <p class="card-text"> In this project, I utilized advanced HR analytics to analyze critical HR Key Performance Indicators (KPIs), identify trends and patterns, and conduct an in-depth attrition analysis. This Project present comprehensive insights into departmental distribution, educational backgrounds, business travel frequencies, gender ratios, job roles, and age groups, provided insights into salary trends, job satisfaction scores, and employee retention, empowering data-driven decisions for effective organizational planning.</p>
+            <a href="https://www.linkedin.com/posts/asnae-shahid_hr-analytic-report-activity-7191823883920953346-bsTx?utm_source=share&utm_medium=member_desktop" class="btn btn-primary">Post</a>
+            <a href="https://app.powerbi.com/groups/me/reports/d05a4c3b-f368-42ba-b822-6ee768708bbe/ReportSection94f29d08641002ea220b?experience=power-bi" class="btn btn-secondary">Live Dashboard</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/performance report_page-0001.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Company Performance Report</h5>
+            <p class="card-text">In this project, I created a dynamic performance report using Power BI to uncover key insights and growth opportunities. By preparing and modeling data from Excel, I developed essential DAX measures for gross profit, sales, and year-to-date comparisons. I designed an interactive report featuring KPI cards, slicers, treemaps, line and stacked column charts, scatter charts, and waterfall charts. This comprehensive, one-page report provides clear insights into company performance and highlights potential growth areas.</p>
+            <a href="https://www.linkedin.com/posts/asnae-shahid_performance-report-activity-7206670611916476418-G9hp?utm_source=share&utm_medium=member_desktop" class="btn btn-primary">Post</a>
+            <a href="https://app.powerbi.com/groups/me/reports/1b0079f0-d0c0-42cd-aa7f-9ad22d387f62/ReportSection?experience=power-bi" class="btn btn-secondary">Live Dashboard</a>
+          </div>
+        </div>
+      </div>
+            <!-- Project 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/swiggy.png" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Metropolitan Restaurants Insights</h5>
+            <p class="card-text">The Swiggy Metropolitan Restaurants Insights Project focuses on restaurant information from various metropolitan cities, including Bangalore, Hyderabad, Mumbai, Pune, and Kolkata. This project leverages SQL for in-depth exploratory data analysis (EDA) to uncover trends in restaurant pricing, ratings, and cuisine types. By addressing key business questions, such as identifying top-rated and most expensive restaurants and analyzing the distribution of ratings and delivery times, the project provides valuable insights for users, developers, and food enthusiasts interested in the metropolitan restaurant scene.</p>
+            <a href="https://github.com/AsnaeSha/Swiggy-Metropolitan-Restaurants-Insights/blob/main/swiggy_restaurant.sql" class="btn btn-primary">Code</a>
+          </div>
+        </div>
+      </div>
+            <!-- Project 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPIDgr_vzYVsG9VKdl_GJa30ajO2nvzn1sXQ&usqp=CAU" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Census Of India 2011 Analysis</h5>
+            <p class="card-text">The "Census 2011 Insights" project into comprehensive analysis of Indian demographic, focusing on district-wise population growth and literacy and sex ratio dynamics. This project aims to uncover patterns and state-wise trends to provide a nuanced understanding of India's socio-economic fabric. Key questions I explored include state-wise population insights, average growth rates, literacy rates, and gender dynamics. Through this project, I aim to offer a holistic view of India's demographic landscape, highlighting educational excellence, growth rate dynamics, and population density shifts.</p>
+            <a href="https://github.com/AsnaeSha/Insights-from-India-s-2011-Census/blob/main/census_2011.sql" class="btn btn-primary">Code</a>
+          </div>
+        </div>
+      </div>
+            <!-- Project 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://airgain.ai/wp-content/uploads/2022/06/German-Airline-Case-study.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Case Study on Indian Flight</h5>
+            <p class="card-text">The "Flight Dataset Analysis" project involves exploratory data analysis (EDA) on a dataset of domestic Indian flights to uncover insights about flight patterns, costs, durations, and other key metrics. Using SQL, this project analyzes various aspects such as peak travel periods, cost fluctuations, operational frequencies of airlines, and travel trends. Key insights include the month with the most flights, the most expensive weekday for travel, and average flight durations between city pairs. This analysis provides valuable information for optimizing flight schedules, planning trips, and understanding domestic flight patterns in India.</p>
+            <a href="https://github.com/AsnaeSha/Flight-dataset-Analysis/blob/main/flight_case_study.sql" class="btn btn-primary">Code</a>
+          </div>
+        </div>
+      </div>
+              <!-- Project 7 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/coffeereport.PNG" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Coffee Sales Insights </h5>
+            <p class="card-text">The Coffee Sales Dashboard in Excel offers a comprehensive view of our coffee business, providing actionable insights into sales trends, customer preferences, and loyalty programs. Utilizing data from orders, customers, and quantities, the dashboard consolidates fragmented information into an organized format for easy analysis. Key features include tracking total sales over time, identifying top-performing customers, and interactive slicers for filtering by coffee size, type, and loyalty card presence. This helps optimize strategies for growth and improved customer satisfaction.
+            </p>
+            <a href="https://github.com/AsnaeSha/Coffee-Sales-Insights/tree/main" class="btn btn-primary">File</a>
+            <a href="https://github.com/AsnaeSha/Coffee-Sales-Insights/blob/main/report.pdf" class="btn btn-secondary">Report</a>
+          </div>
+        </div>
+      </div>
+              <!-- Project 8 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/sale.PNG" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Company Sales Dashboard using Excel </h5>
+            <p class="card-text">
+The Sales Performance Dashboard project aims to provide actionable insights through an interactive Excel dashboard, visualizing key sales metrics and trends. After thorough data cleaning, I conducted in-depth analysis using pivot tables to uncover subcategory-wise sales distribution, top customers by profit, and category-wise profit analysis. The dashboard features visualizations of sales trends, top customers, and dynamic filters for exploring data by various dimensions, demonstrating Excel's power in transforming raw data into meaningful insights and supporting data-driven decision-making.
+            </p>
+            <a href="https://github.com/AsnaeSha/Sales-Insight-Using-Excel/tree/main" class="btn btn-primary">File</a>
+            <a href="https://github.com/AsnaeSha/Sales-Insight-Using-Excel/blob/main/sale%20Dashboard.pdf" class="btn btn-secondary">Report</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section bg-white" id="skills">
+  <div class="container">
+    <h2 class="text-center">Skills</h2>
+    <div class="row">
+      <!-- Skill 1 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/3.png" class="card-img-top" alt="Python">
+          <div class="card-body">
+            <h5 class="card-title">SQL</h5>
+            <p class="card-text">
+              With over 2 years of experience in SQL, I am proficient in MySQL Workbench and PostgreSQL. I have executed over 50 complex queries, utilizing aggregate functions, window functions, CTEs, temporary tables, and subqueries.
+              Passionate about Exploratory Data Analysis (EDA), I have analyzed data sets of thousands of rows.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/2.png" class="card-img-top" alt="Data Visualization">
+          <div class="card-body">
+            <h5 class="card-title">Data Visualization</h5>
+            <p class="card-text">
+              I am highly skilled in Power BI and Excel with over 100 dashboards and reports created. Additionally, I have implemented projects using Tableau. I am adept at writing DAX queries and using Power Query for data cleaning,
+              with extensive experience in creating various types of charts and understanding their specific use cases.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/1.png" class="card-img-top" alt="SQL">
+          <div class="card-body">
+            <h5 class="card-title">Python</h5>
+            <p class="card-text">
+
+I have completed over 100 scripts and projects in Python, gaining expertise in functions, lists, syntax, loops, and Object-Oriented Programming (OOP). I am proficient with essential data analysis libraries such as Pandas and NumPy and have created numerous visualizations using Matplotlib, handling data sets of varying sizes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 4 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/4.png" class="card-img-top" alt="Data Storytelling">
+          <div class="card-body">
+            <h5 class="card-title">Data Storytelling</h5>
+            <p class="card-text">
+
+I excel at transforming complex data into clear, engaging narratives that resonate with diverse audiences. By effectively communicating insights, I ensure that data-driven stories are both informative and compelling, enabling stakeholders to make informed decisions based on easily understandable information.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section text-center text-white bg-dark">
+<div class="container">
+        <h2>Contact Me</h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 contact-item">
+                <a href="https://www.linkedin.com/in/asnae-shahid/" target="_blank">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="social-icon">
+                    LinkedIn
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 contact-item">
+                <a href="https://github.com/AsnaeSha" target="_blank">
+                    <img src="images/github.png" alt="GitHub" class="social-icon">
+                    GitHub
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 contact-item">
+                <a href="mailto:asnaeshahidwork@gmail.com">
+                    <img src="images/gmail.png" alt="Medium" class="social-icon">
+                    asnaeshahidwork@gmail.com
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 contact-item">
+                    <img src="images/phone.png" alt="Medium" class="social-icon">
+                7044000764
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
